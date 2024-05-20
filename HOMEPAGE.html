@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robolution</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="HOMEPAGE.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
@@ -15,128 +18,76 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('Background.png');
-        }
-        header {
-            background-color: #00008B;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-        }
-        .logo img {
-            height: 35px; 
-            margin-right: 10px;
-        }
-        nav {
-            position: relative;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            border-radius: 10px;
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background-color: #e0e0e0;
-            z-index: 1;
-        }
-        nav ul li {
-            display: block;
-        }
-        nav ul li a {
-            display: block;
-            padding: 10px 20px;
-            color: #00008b;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #b1b1b1;
-            border-radius: 10px;
-        }
-        nav:hover ul {
-            display: block;
-        }
-        .dropdown-indicator {
-            width: 20px;
-            height: 3px;
-            background-color: #fff;
-            margin: 5px;
-        }
-    </style>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <section class="font-sans">
         <header>
-            <div class="logo">
-                <a href="https://www.erovoutika.ph/">
-                    <img src="icon.png" alt="Logo">
-                </a>
+            <div class="main">
+                <header class="header">
+                    <span><a href="https://www.erovoutika.ph/"><ion-icon name="home-outline" class="house"></ion-icon></a></span>
+                    <h1 class="rob">ROBOLUTION</h1>
+                    <!-- Robolution's font need to be changed? -->
+                    <nav class="navbar">
+                        <label>
+                            <input type="checkbox">
+                            <div class="toggle">
+                                <span class="top_line common"></span>
+                                <span class="middle_line common"></span>
+                                <span class="bottom_line common"></span>
+                            </div>
+                            <div class="slide">
+                                <ul>
+                                    <li><a href="https://www.erovoutika.ph/">Home</a></li>
+                                    <li><a href="https://www.erovoutika.ph/">About Us</a></li>
+                                    <li><a href="https://www.erovoutika.ph/#news">News</a></li>
+                                    <li><a href="#s3">Competition</a></li>
+                                    <li><a href="https://www.erovoutika.ph/#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </label>
+                    </nav>
+                </header>
             </div>
-            <h1 class="text-white text-4xl">ROBOLUTION</h1>
-            <nav>
-                <div class="dropdown-indicator"></div>
-                <div class="dropdown-indicator"></div>
-                <div class="dropdown-indicator"></div>
-                <ul>
-                    <li><a href="https://www.erovoutika.ph/">Home</a></li>
-                    <li><a href="https://www.erovoutika.ph/#news">News</a></li>
-                    <li><a href="#">Competition</a></li>
-                    <li><a href="https://www.erovoutika.ph/#contact">Contact</a></li>
-                </ul>
-            </nav>
         </header>
-    </section>
+        </section>
 
     <!-- Hero -->
-    <section class="font-sans">
-        <div class="mt-10">
-            <div class="h-[30px] overflow-hidden flex relative bottom-[40px]">
-                <img src="images/bg1.png" class="object-cover w-full h-full" />
-            </div>
+    <section class="font-sans mt-[15rem]">
+        <div class="h-[30px] overflow-hidden flex relative bottom-[8.8rem]">
+            <img src="images/bg1.png" class="object-cover w-full h-full" />
+        </div>
 
-            <div class="mt-28 bg-white">
-                <h1 class="text-3xl flex relative ml-[300px] lg:ml-[300px] md:ml-[150px] sm:ml-[50px]">Regional</h1>
-                <h1 class="text-8xl flex relative ml-[297px] lg:ml-[297px] md:ml-[147px] sm:ml-[47px] mt-2">Robolution</h1>
-                <p class="flex relative ml-[297px] lg:ml-[297px] md:ml-[147px] sm:ml-[47px] text-black mt-2 font-semibold text-3xl">
-                    "Empowering Innovation, Connecting</p>
-                <p class="flex relative ml-[297px] lg:ml-[297px] md:ml-[147px] sm:ml-[47px] text-black mt-2 font-semibold text-3xl">Minds, and Uniting Robotics Excellence”</p>
-                <img src="images/bg2.png" class="absolute flex justify-center w-full h-[51rem] bottom-[.1rem]"/>
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-black">Regional</h1>
+                <h1 class="max-w-2xl mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-9xl xl:text-8xl dark:text-black">Robolution</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-black">"Empowering Innovation, Connecting Minds, and Uniting Robotics Excellence"</p>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    More About Us
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <img src="images/bg2.png" class="flex absolute w-full right-[0rem] h-[50rem] top-[8rem]"/>
             </div>
-
-            <div class="flex absolute left-[55rem]">
-                <img src="images/robotic13.png" class="flex left-[14rem] relative top-[-16rem]"/>
-                <img src="images/images3.png" class="flex absolute left-[10rem] top-[-13rem]"/>
-            </div>
-    
-    
-            <a href="#" class="button w-[15px] h-[15px] ml-[300px] lg:ml-[300px] md:ml-[150px] sm:ml-[50px] mt-3 flex relative top-[5rem]">
-                <i class="ri-arrow-down-s-line"></i>
-            </a>
-            <h2 class="flex relative ml-[357px] lg:ml-[357px] md:ml-[207px] sm:ml-[107px] bottom-[28px] text-xl top-[3rem]">More About Us</h2>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="images/robotic13.png" class="left-[5rem] bottom-[5rem] flex relative" alt="mockup">
+                <img src="images/images3.png" class="flex absolute" alt="mockup">
+            </div>                
         </div>
     </section>
-    
-    
+    <!-- end hero -->
+
+
 
     <!-- Partnerships -->
     <section class="font-sans">
-        <div class="mt-[21.1rem] bg-white">
+        <div class="mt-[13.2rem] bg-white">
             <!-- Partnerships Label -->
             <div class="label">
                 <span class="label-text">Partnerships</span>
@@ -229,7 +180,8 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="https://web.facebook.com/p/DepEd-Tayo-Coron-School-of-Fisheries-Official-100063966886515/?_rdc=1&_rdr" target="_blank">
+                        <a href="https://web.facebook.com/p/DepEd-Tayo-Coron-School-of-Fisheries-Official-100063966886515/?_rdc=1&_rdr"
+                            target="_blank">
                             <img src="images/Logo18.png" alt="Logo 18">
                         </a>
                     </div>
@@ -245,7 +197,7 @@
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     </section>
 
 
@@ -253,208 +205,227 @@
     <section class="flex flex-col lg:flex-row items-center justify-center p-6 lg:p-12 bg-white mb-20 font-sans">
         <!-- Image Section -->
         <div class="relative lg:w-1/2">
-          <img src="images/robotic3_1.webp" alt="Robotics" class="w-full h-auto">
+            <img src="images/robotic3_1.webp" alt="Robotics" class="w-full h-auto">
         </div>
-    
+
         <!-- Text Section -->
         <div class="relative bg-white p-6 lg:p-12 lg:w-1/2 shadow-lg">
-          <h1 class="text-3xl lg:text-5xl font-bold text-center mb-4 lg:mb-8">About Us</h1>
-          <hr class="border-t-2 border-gray-300 mb-4 lg:mb-8">
-          <div class="bg-gray-100 p-4 lg:p-8">
-            <p class="text-lg lg:text-2xl mb-4 lg:mb-8">
-              <span class="font-bold">Robolution</span> features several comprehensive programs including seminars, workshops, exhibits, and competitions.
-            </p>
-            <p class="text-lg lg:text-2xl">
-              Earn certifications, showcase your skills, and explore the latest advancements in robotics and automation. Join us for an exciting journey of innovation and learning!
-            </p>
-          </div>
-          <div class="hidden lg:block bg-gray-300 h-4 lg:h-16 w-full absolute bottom-0 left-0"></div>
+            <h1 class="text-3xl lg:text-5xl font-bold text-center mb-4 lg:mb-8">About Us</h1>
+            <hr class="border-t-2 border-gray-300 mb-4 lg:mb-8">
+            <div class="bg-gray-100 p-4 lg:p-8">
+                <p class="text-lg lg:text-2xl mb-4 lg:mb-8">
+                    <span class="font-bold">Robolution</span> features several comprehensive programs including
+                    seminars, workshops, exhibits, and competitions.
+                </p>
+                <p class="text-lg lg:text-2xl">
+                    Earn certifications, showcase your skills, and explore the latest advancements in robotics and
+                    automation. Join us for an exciting journey of innovation and learning!
+                </p>
+            </div>
+            <div class="hidden lg:block bg-gray-300 h-4 lg:h-16 w-full absolute bottom-0 left-0"></div>
         </div>
-      </section>
+    </section>
 
-<!--==================== COMPETITION ====================-->
-<section class="competition section font-sans" id="competition">
-    <h2 class="section__title-1">
-        <span>Competitions</span>
-    </h2>
+    <!--==================== COMPETITION ====================-->
+    <section class="competition section font-sans" id="competition">
+        <h2 class="section__title-1">
+            <span>Competitions</span>
+        </h2>
 
-    <div class="competition__container container grid">
-        <article class="competition__card">
-            <div class="competition__image">
-             <img src="images/erobot.jpg" alt="image" class="competition__img">  
-             
-             <a href="#" class="competition__button button">
-                <i class="ri-arrow-right-up-line"></i>
-             </a>
-            </div>
+        <div class="competition__container container grid">
+            <article class="competition__card">
+                <div class="competition__image">
+                    <img src="images/erobot.jpg" alt="image" class="competition__img">
 
-            <div class="competition__content">
-                <h3 class="competition__subtitle">Robotics Race</h3>
-                <h2 class="competition__title">EROBOT COMPETITION</h2>
+                    <a href="#" class="competition__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-                <p class="competition__description">
-                    Join the challenge, show off your skills, and race to victory!
-                </p>
-            </div>
+                <div class="competition__content">
+                    <h3 class="competition__subtitle">Robotics Race</h3>
+                    <h2 class="competition__title">EROBOT COMPETITION</h2>
 
-        </article>
+                    <p class="competition__description">
+                        Join the challenge, show off your skills, and race to victory!
+                    </p>
+                </div>
 
-        <article class="competition__card">
-            <div class="competition__image">
-             <img src="images/erovou.png" alt="image" class="competition__img">  
-             
-             <a href="#" class="competition__button button">
-                <i class="ri-arrow-right-up-line"></i>
-             </a>
-            </div>
+            </article>
 
-            <div class="competition__content">
-                <h3 class="competition__subtitle">Robotics & Automation</h3>
-                <h2 class="competition__title">EROVOUTHON COMPETITION</h2>
+            <article class="competition__card">
+                <div class="competition__image">
+                    <img src="images/erovou.png" alt="image" class="competition__img">
 
-                <p class="competition__description">
-                    Unleash your creativity and develop innovative solutions in this exciting event!
-                </p>
-            </div>
+                    <a href="#" class="competition__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-        </article>
+                <div class="competition__content">
+                    <h3 class="competition__subtitle">Robotics & Automation</h3>
+                    <h2 class="competition__title">EROVOUTHON COMPETITION</h2>
 
-        <article class="competition__card">
-            <div class="competition__image">
-             <img src="images/quiz.png" alt="image" class="competition__img">  
-             
-             <a href="#" class="competition__button button">
-                <i class="ri-arrow-right-up-line"></i>
-             </a>
-            </div>
+                    <p class="competition__description">
+                        Unleash your creativity and develop innovative solutions in this exciting event!
+                    </p>
+                </div>
 
-            <div class="competition__content">
-                <h3 class="competition__subtitle">Quiz</h3>
-                <h2 class="competition__title">EROBO-QUIZ BEE</h2>
+            </article>
 
-                <p class="competition__description">
-                    Test your knowledge, showcase your expertise, and celebrate robotics!
-                </p>
-            </div>
+            <article class="competition__card">
+                <div class="competition__image">
+                    <img src="images/quiz.png" alt="image" class="competition__img">
 
-        </article>
-    </div>
-</section>
+                    <a href="#" class="competition__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="competition__content">
+                    <h3 class="competition__subtitle">Quiz</h3>
+                    <h2 class="competition__title">EROBO-QUIZ BEE</h2>
+
+                    <p class="competition__description">
+                        Test your knowledge, showcase your expertise, and celebrate robotics!
+                    </p>
+                </div>
+
+            </article>
+        </div>
+    </section>
 
     <!-- News, Comittee, Education -->
     <section class="bg-white font-sans">
         <div class="container px-6 py-10 mx-auto">
             <div class="text-center">
-                <h1 class="text-2xl font-semibold text-black capitalize lg:text-3xl">Learn More</h1>
+                <h1 class="text-2xl font-semibold text-black capitalize lg:text-5xl">Learn More</h1>
             </div>
-    
+
             <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
                 <div>
                     <div class="relative">
-                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80" src="images/committee.JPG" alt="">
+                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80"
+                            src="images/committee.JPG" alt="">
                     </div>
-    
+
                     <h1 class="mt-6 text-xl font-semibold text-black">News</h1>
-    
-                    <hr class="w-32 my-6 text-blue-500">
-    
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
+
+                    <hr class="w-32 my-6 text-black">
+
+                    <p class="text-sm text-gray-700 dark:text-gray-400">
                         Check out the latest news and updates on Robolution Regionals!
                     </p>
-    
-                    <a href="#" class="relative left-[100px] inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read more</a>
+
+                    <a href="#"
+                        class="relative left-[100px] inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read
+                        more</a>
                 </div>
-    
+
                 <div>
                     <div class="relative bg-white rounded">
-                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80" src="images/mixed-group-of-business-people-sitting-around-a-table-and-talking.png" alt="">
+                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80"
+                            src="images/mixed-group-of-business-people-sitting-around-a-table-and-talking.png" alt="">
                     </div>
-    
+
                     <h1 class="mt-6 text-xl font-semibold text-black">Comittee</h1>
-    
+
                     <hr class="w-32 my-6 text-blue-500">
-    
+
                     <p class="text-sm text-gray-500 dark:text-gray-400">
                         Meet the Comittee!
                     </p>
-    
-                    <a href="#" class="relative left-[100px] inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read more</a>
+
+                    <a href="#"
+                        class="relative left-[100px] inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read
+                        more</a>
                 </div>
-    
+
                 <div>
                     <div class="relative">
-                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80" src="images/robotics-companies-roundup1-1.png" alt="">
+                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80"
+                            src="images/robotics-companies-roundup1-1.png" alt="">
                     </div>
-    
+
                     <h1 class="mt-6 text-xl font-semibold text-black">Education</h1>
-    
+
                     <hr class="w-32 my-6 text-blue-500">
-    
+
                     <p class="text-sm text-gray-500 dark:text-gray-400">
                         Check out our services!
                     </p>
-    
-                    <a href="#" class="relative left-[100px] inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read more</a>
+
+                    <a href="#"
+                        class="relative left-[100px] inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read
+                        more</a>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
     <!-- Footer -->
     <style>
         .footer {
-            background-image: linear-gradient(to right, rgb(3, 24, 145) , rgb(0, 0, 0)); /* Adjust as needed */
+            background-image: linear-gradient(to right, rgb(3, 24, 145), rgb(0, 0, 0));
+            /* Adjust as needed */
         }
     </style>
-    <section>
-        <div>
-            <footer class="footer text-white p-6">
-                <div class="max-w-screen-xl mx-auto">
-                    <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
+        <section>
+            <div>
+                <footer class="mt-40">
+                    <section>
                         <div>
-                            <h2 class="address text-sm font-sans text-white">
-                                Unit 703, PARC HOUSE II, Epifanio de los Santos Ave,<br>
-                                Makati, 1212 Metro Manila (Philippines)<br>
-                                erovoutika@gmail.com<br>
-                                074 423 1557
-                            </h2>
+                            <footer class="footer text-white p-3">
+                                <div class="max-w-screen-xl mx-auto">
+                                    <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <h2 class="address text-sm font-sans text-white pt-24">
+                                                Unit 703, PARC HOUSE II, Epifanio de los Santos Ave,<br>
+                                                Makati, 1212 Metro Manila (Philippines)<br>
+                                                erovoutika@gmail.com<br>
+                                                074 423 1557
+                                            </h2>
+                                        </div>
+                                        <div class="flex flex-col md:items-end ">
+                                            <div class="flex footer-logo justify-center mb full pt-24">
+                                                <a href="https://www.erovoutika.ph/" class="block ">
+                                                    <img src="images/design1.png" alt="Erovoutika Logo" class="w-60 h-auto pb-3 pr-14 px-9">
+                                                </a>
+                                            </div>
+                                            <p class="text-sm text-center md:text-left pb-7">
+                                                Erovoutika @ 2022. All Rights Reserved.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-11 flex justify-center space-x-10">
+                                        <a href="https://web.facebook.com/erovoutika" class="text-white hover:text-gray-400">
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                                                <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span class="sr-only">Facebook page</span>
+                                        </a>
+                                        <a href="https://ph.linkedin.com/company/erovoutika" class="text-white hover:text-gray-400">
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+                                            </svg>
+                                            <span class="sr-only">LinkedIn page</span>
+                                        </a>
+                                        <a href="https://twitter.com/erovoutika?lang=en" class="text-white hover:text-gray-400">
+                                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                                                <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <span class="sr-only">Twitter page</span>
+                                        </a>
+                                    </div>
+                                </div>
+                
+                            </footer>
                         </div>
-                        <div class="flex flex-col md:items-end">
-                            <div class="flex footer-logo justify-center mb full ">
-                                <a href="https://www.erovoutika.ph/" class="block">
-                                    <img src="/images/design1.png" alt="Erovoutika Logo" class="w-32 h-auto">
-                                </a>
-                            </div>
-                            <p class="text-sm text-center md:text-left">
-                                Erovoutika @ 2022. All Rights Reserved.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mt-11 flex justify-center space-x-10">
-                        <a href="https://web.facebook.com/erovoutika" class="text-white hover:text-gray-400">
-                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                                <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="sr-only">Facebook page</span>
-                        </a>
-                        <a href="https://ph.linkedin.com/company/erovoutika" class="text-white hover:text-gray-400">
-                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
-                                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
-                            </svg>
-                            <span class="sr-only">LinkedIn page</span>
-                        </a>
-                        <a href="https://twitter.com/erovoutika?lang=en" class="text-white hover:text-gray-400">
-                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                                <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="sr-only">Twitter page</span>
-                        </a>
-                    </div>
-                </div>
-
-            </footer>
-        </div>
-    </section>
+                    </section>
+                
+                </footer>
+            </div>
+        </section>
 
     <script src="HOMEPAGE.js"></script>
 </body>
