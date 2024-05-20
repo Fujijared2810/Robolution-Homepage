@@ -1,71 +1,168 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*navbar section */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-/* CSS for Partnerhips Section */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            padding: 10px 10%;
+            background: rgb(11, 49, 130);
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+/* Robolution (H1) */
+        .rob {
+            color: white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 34px;
+        }
 
-.label {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 24px;
-  background-image: url('images/Partnerships_BG.png');
-  background-size: cover;
-  color: black;
-  padding: 5px;
-  position: relative; /* Add this to position the span element relative to the label */
-}
+        .toggle {
+            position: absolute;
+            height: 65px;
+            width: 80px;  
+            top: 20px;  
+            right: 50px; 
+            z-index: 1; 
+            cursor: pointer; 
+            border-radius: 2px; 
+            margin-right: -20px;
+            background-color: rgb(11, 49, 130);
+        }
 
-.label-text {
-  display: inline-block;
-  opacity: 0; /* Start hidden */
-  transform: translateY(20px); /* Start slightly below */
-  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
-}
+        input {
+            display: none;
+            visibility: hidden;
+            /* -webkit-appearance: none; */
+        }
+        /* Home Button */
+        ion-icon {
+            width: 50px;
+            height: 100px;
+            color: white;
+            margin-left: -65px;
+        }
 
-.label-text.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+        .house:hover {
+            transition: .3s ease-in;
+            color: rgb(79, 141, 233);
+        }
+        /* Hamburger Dropdown (Toggle) */
+        .toggle .common {
+            position: absolute; 
+            height: 3px;   
+            width: 50px;   
+            background-color: #ffffff;
+            border-radius: 40px; 
+            transition: 0.3s ease; 
+        }
 
+        .toggle .top_line {
+            top: 25%; 
+            left: 14px; 
+            transform: translate (-50%, -50%);
+            height: 5px;
+        }
 
-.carousel {
-  overflow: hidden;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+        .toggle .middle_line {
+            top: 50%;  
+            left: 50%;  
+            transform: translate( -50%, -50%);
+            height: 5px;
+        }
 
-.carousel-track {
-  display: flex;
-  white-space: nowrap;
-  animation: scroll 60s linear infinite; /* Adjust duration to change speed of Logos */
-}
+        .toggle .bottom_line {
+            top: 70%;  
+            left: 14px;  
+            transform: translate (-50%, -50%);
+            height: 5px;
+        }
 
-.carousel-item {
-  flex: 0 0 auto;
-  width: 90px; /* Adjust width as needed */
-  margin: 30px;
-  transition: transform 0.3s; /* Smooth transition for hover effect */
-}
+        input:checked ~ .toggle .top_line {
+            left: 10px;  
+            top: 37px; 
+            width: 60px; 
+            transform: rotate(45deg);
+        }
 
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
+        input:checked ~ .toggle .bottom_line {
+            left: 10px; 
+            top: 37px;  
+            width: 60px;  
+            transform: rotate(-45deg);
+        }
 
-.carousel-item:hover {
-  transform: scale(0.9); /* Slightly shrinks the logo */
-}
+        input:checked ~ .toggle .middle_line {
+            left: 2px; 
+            top: 14px;  
+            width: 25px;  
+            opacity: 0; 
+            transform: translateX(20px);
+        }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-/* CSS for Partnerhips Section ends here */
+        input:checked ~ .slide {
+            transform: translateX(0);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .slide {
+            margin-top: 60px;
+            height: 180px;
+            width: 160px;
+            position: absolute;
+            background-color: #f0f0f0;
+            backdrop-filter:  blur(10px);
+            box-shadow: -1px 10 10px #000000;
+            transition: 0.3s ease-in-out;
+            transform: translateX(2000px);
+            border: transparent;
+            border-radius: 30px;
+            right: 10px;
+        }
+
+        .slide li {
+            margin-top: 10px;
+            padding: 2px;
+            align-items: center;
+            text-align: center;
+            margin-left: 0px;
+            list-style-type: none;
+            color: black;
+        }
+
+        .slide li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .slide li a:hover {
+            /* rgb(63, 114, 189) */
+            color: #00008B; 
+            transition: 0.1s ease-in-out;
+            font-weight: 800;
+            font-size: 25px;
+            text-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+/*navbar section ends here*/
