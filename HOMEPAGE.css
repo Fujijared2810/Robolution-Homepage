@@ -606,7 +606,7 @@ img {
 @media (max-width: 767px) {
   /* Adjust the height as needed */
   .hero-section {
-    height: 45vh; /* Set the height to the viewport height */
+    height: 70vh; /* Set the height to the viewport height */
     overflow: hidden; /* Hide any overflow content */
   }
 }
