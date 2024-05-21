@@ -612,24 +612,12 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-\[5rem\] {
   bottom: 5rem;
 }
 
 .bottom-\[8\.8rem\] {
   bottom: 8.8rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.left-\[100px\] {
-  left: 100px;
 }
 
 .left-\[5rem\] {
@@ -656,10 +644,6 @@ video {
 
 .-mr-1 {
   margin-right: -0.25rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .mb-4 {
@@ -736,10 +720,6 @@ video {
 
 .h-10 {
   height: 2.5rem;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .h-5 {
@@ -826,12 +806,25 @@ video {
   justify-content: center;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -872,11 +865,6 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-primary-700 {
@@ -1062,28 +1050,19 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-/*navbar section */
-
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+/*navbar section */
 
 .header {
   position: fixed;
@@ -1112,11 +1091,11 @@ body {
   height: 65px;
   width: 80px;
   top: 20px;
-  right: 50px;
+  right: 65px;
   z-index: 1;
   cursor: pointer;
   border-radius: 2px;
-  margin-right: -20px;
+  margin-right: -50px;
   background-color: rgb(11, 49, 130);
 }
 
@@ -1132,7 +1111,7 @@ ion-icon {
   width: 50px;
   height: 100px;
   color: white;
-  margin-left: -65px;
+  margin-left: -30px;
 }
 
 .house:hover {
@@ -1219,10 +1198,10 @@ input:checked ~ .slide {
   margin-top: 10px;
   padding: 2px;
   align-items: center;
-  text-align: center;
-  margin-left: 0px;
+  text-align: left;
   list-style-type: none;
   color: black;
+  margin-left: 15px;
 }
 
 .slide li a {
@@ -1691,6 +1670,36 @@ img {
 
 /*======ZOE LOPEZ ICT22======*/
 
+/* animates headings */
+
+.fade-up {
+  animation: fadeUpAnimation 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjust the height as needed */
+
+  .hero-section {
+    height: 45vh;
+    /* Set the height to the viewport height */
+    overflow: hidden;
+    /* Hide any overflow content */
+  }
+}
+
 .hover\:bg-primary-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
@@ -1716,6 +1725,14 @@ img {
   .sm\:h-80 {
     height: 20rem;
   }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1733,6 +1750,10 @@ img {
 
   .md\:items-end {
     align-items: flex-end;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:text-left {
@@ -1772,16 +1793,8 @@ img {
     margin-top: 0px;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:h-16 {
-    height: 4rem;
   }
 
   .lg\:h-80 {
@@ -1798,6 +1811,14 @@ img {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:gap-8 {
