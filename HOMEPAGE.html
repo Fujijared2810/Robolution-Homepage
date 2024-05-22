@@ -5,32 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robolution</title>
-
+    <!-- LINKS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="HOMEPAGE.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" el="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- SCRIPTS -->
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="HOMEPAGE.js"></script>
 </head>
-
 <body class="bg-white">
     <!-- Navbar -->
-    <section class="font-sans">
+    <section class="font-sans" id="home">
         <header>
             <div class="main">
                 <header class="header">
                     <span>
-                        <a href="#" class="home-link">
+                        <a href="#home" class="home-link">
                             <ion-icon name="home-outline" class="house"></ion-icon>
                         </a>
                     </span>
@@ -46,11 +44,11 @@
                             </div>
                             <div class="slide">
                                 <ul>
-                                    <li><a href="https://www.erovoutika.ph/">Home</a></li>
-                                    <li><a href="https://www.erovoutika.ph/">About Us</a></li>
-                                    <li><a href="https://www.erovoutika.ph/#news">News</a></li>
-                                    <li><a href="#s3">Competition</a></li>
-                                    <li><a href="https://www.erovoutika.ph/#contact">Contact</a></li>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about-us">About Us</a></li>
+                                    <li><a href="#competition">Competition</a></li>
+                                    <li><a href="#news">News</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </label>
@@ -101,7 +99,7 @@
 
 
     <!-- Partnerships -->
-    <section class="font-sans">
+    <section class="font-sans" id="about-us">
         <div class="mt-[13.2rem] bg-white">
             <!-- Partnerships Label -->
             <div class="label">
@@ -214,10 +212,11 @@
             </div>
         </div>
     </section>
+    <!-- end partnerships -->
 
 
     <!-- About -->
-    <section id="about-us" class=" gap-1 grid-cols-2 gap-x-5 gap-y-5 flex flex-col lg:flex-row items-center justify-center p-6 lg:p-12">
+    <section class=" gap-1 grid-cols-2 gap-x-5 gap-y-5 flex flex-col lg:flex-row items-center justify-center p-6 lg:p-12">
         <!-- Image Section -->
 
         <img src="images/robotic9.jpg" alt="Robotics" class=" " style="max-height: 540px; max-width: 540px; fit-content; width: 100%;
@@ -241,6 +240,7 @@
 
         </div>
     </section>
+    <!-- end About -->
 
     <!--==================== COMPETITION ====================-->
     <section class="competition section font-sans" id="competition">
@@ -297,22 +297,22 @@
                         <i class="ri-arrow-right-up-line"></i>
                     </a>
                 </div>
-
                 <div class="competition__content">
                     <h3 class="competition__subtitle">Quiz</h3>
                     <h2 class="competition__title">EROBO-QUIZ BEE</h2>
-
                     <p class="competition__description">
                         Test your knowledge, showcase your expertise, and celebrate robotics!
                     </p>
                 </div>
-
+                <div id="news"></div>
             </article>
         </div>
     </section>
+    <!--==================== END COMPETITION ====================-->
+
 
     <!-- News, Comittee, Education -->
-    <section class="bg-white font-sans">
+    <section class="bg-white font-sans mt-10">
         <div class="container px-6 py-10 mx-auto">
             <div class="text-center">
                 <h1 class="text-2xl font-semibold text-black capitalize lg:text-5xl">Learn More</h1>
@@ -321,43 +321,37 @@
             <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
                 <div>
                     <div class="relative">
-                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80"
-                            src="images/committee.JPG" alt="">
+                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80" src="images/committee.JPG" alt="">
                     </div>
 
                     <h1 class="mt-6 text-xl font-semibold text-black">News</h1>
 
-                    <hr class="w-32 my-6 text-black">
+                    <hr class="w-32 my-6 border-black">
 
                     <p class="text-sm text-gray-700 dark:text-gray-400">
                         Be updated on the headlines on Robolutions with Erovoutika!
                     </p>
 
                     <div class="flex justify-center sm:justify-center md:justify-center lg:justify-center">
-                        <a href="#"
-                            class="inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read
-                            more</a>
+                        <a href="#" class="inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read more</a>
                     </div>
                 </div>
 
                 <div>
                     <div class="relative bg-white rounded">
-                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80"
-                            src="images/mixed-group-of-business-people-sitting-around-a-table-and-talking.png" alt="">
+                        <img class="object-cover object-center w-full h-64 rounded-lg sm:h-80 md:h-64 lg:h-80" src="images/mixed-group-of-business-people-sitting-around-a-table-and-talking.png" alt="">
                     </div>
 
                     <h1 class="mt-6 text-xl font-semibold text-black">Comittee</h1>
 
-                    <hr class="w-32 my-6 text-blue-500">
+                    <hr class="w-32 my-6 border-black">
 
                     <p class="text-sm text-gray-500 dark:text-gray-400">
                         Find out who are the people behind the success of the robolution regionals!
                     </p>
 
                     <div class="flex justify-center sm:justify-center md:justify-center lg:justify-center">
-                        <a href="#"
-                            class="inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read
-                            more</a>
+                        <a href="#" class="inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read more</a>
                     </div>
                 </div>
 
@@ -369,21 +363,21 @@
 
                     <h1 class="mt-6 text-xl font-semibold text-black">Education</h1>
 
-                    <hr class="w-32 my-6 text-blue-500">
+                    <hr class="w-32 my-6 border-black">
 
                     <p class="text-sm text-gray-500 dark:text-gray-400">
                         Check out the knowledge we share in our partner schools!
                     </p>
 
                     <div class="flex justify-center sm:justify-center md:justify-center lg:justify-center">
-                        <a href="#"
-                            class="inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read
-                            more</a>
+                        <a href="#" class="inline-block mt-4 text-blue-500 hover:text-blue-400 button rounded-full h-10 w-36">Read more</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End News, Comittee, Education -->
+
 
     <!-- Footer -->
     <style>
@@ -392,7 +386,7 @@
             /* Adjust as needed */
         }
     </style>
-    <section>
+    <section id="contact">
         <div>
             <footer class="mt-40">
                 <section>
@@ -460,8 +454,6 @@
             </footer>
         </div>
     </section>
-
-    <script src="HOMEPAGE.js"></script>
+    <!-- End Footer -->
 </body>
-
 </html>
