@@ -3,153 +3,165 @@
 @tailwind utilities;
 
 /*navbar section */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  padding: 10px 10%;
-  background: rgb(11, 49, 130);
-  display: flex;
-  align-items: center;
-  z-index: 100;
+*{
+  margin: 0;
+  padding: 0;
 }
-/* Robolution (H1) */
-.rob {
-  color: white;
+.toggle{
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 34px;
-}
-
-.toggle {
-  position: absolute;
-  height: 65px;
+  height:80px;
   width: 80px;  
-  top: 20px;  
-  right: 65px; 
+  top: 5px;  
+  right: 50px; 
   z-index: 1; 
   cursor: pointer; 
-  border-radius: 2px; 
-  margin-right: -50px;
+  
   background-color: rgb(11, 49, 130);
-}
 
-input {
+}
+input{
   display: none;
   visibility: hidden;
-  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
 }
-/* Home Button */
-ion-icon {
-  width: 50px;
-  height: 100px;
+.house{
   color: white;
-  margin-left: -30px;
+  margin-left: 25px;
 }
-
-.house:hover {
+.house:hover{
   transition: .3s ease-in;
   color: rgb(79, 141, 233);
 }
-/* Hamburger Dropdown (Toggle) */
-.toggle .common {
+
+.toggle .common{
   position: absolute; 
   height: 3px;   
   width: 50px;   
   background-color: #ffffff;
-  border-radius: 40px; 
+  border-radius: 50px;  
   transition: 0.3s ease; 
 }
 
-.toggle .top_line {
-  top: 25%; 
+
+.toggle .top_line{
+  top:25%; 
   left: 14px; 
   transform: translate (-50%, -50%);
   height: 5px;
 }
 
-.toggle .middle_line {
-  top: 50%;  
-  left: 50%;  
+.toggle .middle_line{
+  top:50%;  
+  left: 49%;  
   transform: translate( -50%, -50%);
   height: 5px;
 }
 
-.toggle .bottom_line {
+.toggle .bottom_line{
   top: 70%;  
   left: 14px;  
   transform: translate (-50%, -50%);
   height: 5px;
 }
 
-input:checked ~ .toggle .top_line {
+input:checked ~ .toggle .top_line{
   left: 10px;  
   top: 37px; 
   width: 60px; 
   transform: rotate(45deg);
 }
 
-input:checked ~ .toggle .bottom_line {
+input:checked ~ .toggle .bottom_line{
   left: 10px; 
   top: 37px;  
   width: 60px;  
   transform: rotate(-45deg);
 }
 
-input:checked ~ .toggle .middle_line {
-  left: 2px; 
-  top: 14px;  
-  width: 25px;  
+input:checked ~ .toggle .middle_line{
+ left: 2px; 
+ top: 14px;   
+ width: 25px;  
   opacity: 0; 
-  transform: translateX(20px);
+ transform: translateX(20px);
 }
 
-input:checked ~ .slide {
+input:checked ~ .slide{
   transform: translateX(0);
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+   box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      opacity: 70%;
 }
-
-.slide {
-  margin-top: 60px;
-  height: 230px;
-  width: 160px;
-  position: absolute;
-  background-color: #f0f0f0;
-  backdrop-filter:  blur(10px);
-  box-shadow: -1px 10 10px #000000;
-  transition: 0.3s ease-in-out;
-  transform: translateX(2000px);
-  border: transparent;
-  border-radius: 30px;
-  right: 10px;
+.slide{
+  margin-top: 47px;
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter:  blur(20px);
+    box-shadow: -1px 10 10px #000000;
+    transition: 0.3s ease;
+    transform: translateX(2000px);
+    border: transparent;
+    right: 0px;
 }
-
-.slide li {
+.slide li{
   margin-top: 10px;
   padding: 2px;
   align-items: center;
-  text-align: left;
-  margin-left: 0px;
+  margin-left: 20px;
   list-style-type: none;
   color: black;
-  margin-left: 15px;
 }
-
-.slide li a {
-  font-size: 20px;
+.slide li a{
+  font-size: 25px;
   text-decoration: none;
   color: black;
 }
 
-.slide li a:hover {
-  /* rgb(63, 114, 189) */
+.slide li a:hover{
   color: #00008B; 
   transition: 0.1s ease-in-out;
   font-weight: 800;
   font-size: 25px;
   text-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.slide li {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.span1{
+text-align: center;
+}
+.home{
+
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height: 90px;
+  padding: 20px, 10%;
+  background: rgb(11, 49, 130);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+ion-icon{
+  width: 50px;
+  height: 100px;
+}
+
+.rob {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 34px;
 }
 /*navbar section ends here*/
 
